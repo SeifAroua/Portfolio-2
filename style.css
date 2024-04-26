@@ -1,0 +1,248 @@
+body {
+  background: linear-gradient(to bottom, #0000ff, #ffffff);
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+.logo img {
+  width: 100px;
+  border-radius: 50px;
+  cursor: pointer;
+}
+
+.image img {
+  width: 200px;
+  border-radius: 50px;
+}
+
+header {
+  background-color: #333;
+  color: #fff;
+  padding: 10px 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+nav ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+}
+nav ul li {
+  margin-right: 20px;
+}
+nav ul li:last-child {
+  margin-right: 0;
+}
+nav ul li a {
+  color: #fff;
+  text-decoration: none;
+  padding: 5px 10px;
+  border-radius: 5px;
+  transition: background-color 0.3s ease;
+}
+nav ul li a:hover {
+  background-color: #555;
+}
+footer {
+  background-color: #333;
+  color: #fff;
+  text-align: center;
+  padding: 10px 0;
+  width: 100%;
+  margin-top: auto;
+}
+#presentation {
+  padding-top: 50px;
+  background-repeat: no-repeat;
+  background-size: cover;
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+#competences {
+  border: 1px solid #eee;
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+.competences {
+  display: flex;
+  flex-direction: column;
+  margin: 0 auto;
+  width: 70%;
+  padding: 20px;
+}
+.competences h2 {
+  font-size: 2rem;
+}
+.competences .competence {
+  margin-bottom: 15px;
+}
+.competences .nom-competence {
+  font-weight: bold;
+  margin-bottom: 5px;
+}
+.competences .barre {
+  /* background-color: #f0f0f0; */
+  border-radius: 5px;
+  height: 15px;
+  width: 100%;
+  margin-bottom: 5px;
+  color: white;
+  font-weight: bold;
+  /* padding: 10px; */
+}
+.competences .niveau {
+  background-color: #007bff;
+  border-radius: 5px;
+  height: 100%;
+  padding: 10px;
+}
+#projets {
+  display: flex;
+  flex-direction: column;
+  margin: 0 auto;
+  width: 70%;
+  /* padding: 20px; */
+}
+#projets h2 {
+  text-align: center;
+  font-size: 2rem;
+}
+.projets-groupe {
+  width: 70%;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+}
+
+.projet {
+  width: 500px;
+  margin: 20px;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 20px;
+  transition: 0.3s ease-in-out;
+}
+
+.projet:hover {
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+}
+
+.projets-pair {
+  display: flex;
+  width: 100%;
+  margin: 0 auto;
+}
+
+.projets-pair:first-child {
+  margin-right: 20px; /* Espacement entre les deux paires de projets */
+}
+
+.presentation {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  padding: 20px;
+}
+
+.presentation img {
+  width: 500px;
+  border-radius: 5px;
+}
+
+.presentation .text {
+  width: 50%;
+  font-size: 1.7rem;
+}
+
+.niveau {
+  background: linear-gradient(to right, #727274, #ffffff);
+}
+
+.github {
+  /* Style du lien */
+  color: #0366d6; /* Couleur du texte */
+  text-decoration: none; /* Suppression du soulignement par défaut */
+  display: inline-block; /* Affichage en tant que bloc pour pouvoir appliquer du padding et du margin si nécessaire */
+  padding: 5px 10px; /* Rembourrage intérieur du lien */
+  background-color: #f1f8ff; /* Couleur d'arrière-plan */
+  border: 1px solid #0366d6; /* Bordure autour du lien */
+  border-radius: 5px; /* Coins arrondis */
+  transition: background-color 0.3s, color 0.3s; /* Animation de transition pour le survol */
+}
+
+.github-link {
+  display: block;
+  text-align: center;
+  margin-top: 10px; /* Espacement entre chaque lien */
+}
+
+.github:hover {
+  /* Style lors du survol */
+  background-color: #0366d6; /* Changement de couleur d'arrière-plan */
+  color: #ffffff; /* Changement de couleur du texte */
+}
+.projets-groupe {
+  display: flex;
+  flex-direction: column;
+}
+
+.projet {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 300px;
+}
+
+.github-link {
+  align-self: flex-end;
+}
+/* Media query pour les écrans de taille inférieure à 768 pixels */
+@media screen and (max-width: 768px) {
+  /* Styles à appliquer lorsque la largeur de l'écran est inférieure à 768 pixels */
+  nav ul {
+    flex-direction: column; /* Afficher les éléments de la liste verticalement */
+  }
+
+  nav li {
+    margin-bottom: 10px; /* Espacement entre chaque élément de la liste */
+  }
+  .presentation {
+    text-align: center; /* Centrer le contenu */
+  }
+
+  .presentation .image {
+    margin-bottom: 20px; /* Espacement entre l'image et le texte */
+  }
+
+  .competences {
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* Centrer les compétences horizontalement */
+  }
+
+  .competence {
+    width: 100%; /* Assurer que chaque compétence occupe toute la largeur */
+    margin-bottom: 20px; /* Espacement entre chaque compétence */
+  }
+  .projets-groupe {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .projets-pair {
+    flex-direction: column;
+  }
+
+  .projet {
+    margin-bottom: 20px; /* Espacement entre chaque projet */
+  }
+
+  footer p {
+    font-size: 14px; /* Taille de police plus petite */
+  }
+}
